@@ -1,18 +1,18 @@
 var admobid = {};
 if( /(android)/i.test(navigator.userAgent) ) { 
     admobid = { // for Android
-        banner: 'ca-app-pub-7925487268042880/5455385567',
-        interstitial: 'ca-app-pub-7925487268042880/6932118769'
+        banner: 'ca-app-pub-7925487268042880/6770099564',
+        interstitial: 'ca-app-pub-7925487268042880/7097196767'
     };
 } else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
     admobid = { // for iOS
-        banner: 'ca-app-pub-7925487268042880/5455385567',
-        interstitial: 'ca-app-pub-7925487268042880/6932118769'
+        banner: 'ca-app-pub-7925487268042880/6770099564',
+        interstitial: 'ca-app-pub-7925487268042880/7097196767'
     };
 } else {
     admobid = { // for Windows Phone
-        banner: 'ca-app-pub-7925487268042880/5455385567',
-        interstitial: 'ca-app-pub-7925487268042880/6932118769'
+        banner: 'ca-app-pub-7925487268042880/6770099564',
+        interstitial: 'ca-app-pub-7925487268042880/7097196767'
     };
 }
 
@@ -27,13 +27,13 @@ function initApp() {
 
     AdMob.createBanner( {
         adId: admobid.banner, 
-        isTesting: true,
+        isTesting: false,
         overlap: false, 
         offsetTopBar: false, 
         position: AdMob.AD_POSITION.BOTTOM_CENTER,
         bgColor: 'black'
     } );
-    
+    AdMob.showBanner(AdMob.AD_POSITION.BOTTOM_CENTER);
     AdMob.prepareInterstitial({
         adId: admobid.interstitial,
         autoShow: true
