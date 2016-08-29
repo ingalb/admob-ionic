@@ -2,7 +2,7 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
 		    xmlns:android="http://schemas.android.com/apk/res/android"
-        id = "com.ingalb.albania-2016"
+        id = "com.ingalb.al-2016"
         versionCode = "7"
         version = "1.4">
     <name>Albania in France 2016</name>
@@ -21,7 +21,7 @@
 
 	<content src="index.html"/>
 	
-	<preference name="phonegap-version" value="cli-6.1.0" />
+	<preference name="phonegap-version"/>
 	<preference name="android-build-tool" value="gradle" />
 
 	<gap:plugin name="org.apache.cordova.device" />
@@ -35,12 +35,12 @@
 
 
 	<gap:plugin name="ionic-plugin-keyboard" source="npm"/>
-    <gap:plugin name="cordova-plugin-admobpro" source="npm" />
+        <gap:plugin name="cordova-plugin-admobpro" source="npm" />
 	<gap:plugin name="onesignal-cordova-plugin" source="npm" />
 	<!--<gap:plugin name="onesignal-cordova-plugin-pgb-compat" source="npm" />-->
 	<!--<gap:plugin name="cordova-plugin-googleplayservices" source="npm" />-->
-    <gap:plugin name="nl.x-services.plugins.socialsharing" />
-    <!--<gap:plugin name="cordova-plugin-android-support-v4" source="npm" />-->
+        <gap:plugin name="nl.x-services.plugins.socialsharing" source="npm"/>
+   
 
 
 
